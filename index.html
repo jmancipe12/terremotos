@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5ffd7f28d1a041b3f885f0d62df0c276 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5ffd7f28d1a041b3f885f0d62df0c276" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5ffd7f28d1a041b3f885f0d62df0c276 = L.map(
+                "map_5ffd7f28d1a041b3f885f0d62df0c276",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f9caa51c392bd0b7bc15df90ddf5d94b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f9caa51c392bd0b7bc15df90ddf5d94b.addTo(map_5ffd7f28d1a041b3f885f0d62df0c276);
+        
+    
+            var marker_cluster_f19e40373fb9c15461a4e1fe13e8e323 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_bcbbc15d6d9cbb5b9ef5e4132ab5108d = L.circleMarker(
+                [25.425, 142.6876],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_b9c3985fa9fe866379a43e793a1e1c69 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_978c21d0564949e50ba55a9f455a4421 = $(`<div id="html_978c21d0564949e50ba55a9f455a4421" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_b9c3985fa9fe866379a43e793a1e1c69.setContent(html_978c21d0564949e50ba55a9f455a4421);
+            
+        
+
+        circle_marker_bcbbc15d6d9cbb5b9ef5e4132ab5108d.bindPopup(popup_b9c3985fa9fe866379a43e793a1e1c69)
+        ;
+
+        
+    
+    
+            var circle_marker_186e8ac376fc61e7c9818ab8e3b9c6e3 = L.circleMarker(
+                [25.5101, 142.7492],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_e1896009127774a661ff739bb0b80db1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96661958cc64991697c8c8bc618bb71f = $(`<div id="html_96661958cc64991697c8c8bc618bb71f" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_e1896009127774a661ff739bb0b80db1.setContent(html_96661958cc64991697c8c8bc618bb71f);
+            
+        
+
+        circle_marker_186e8ac376fc61e7c9818ab8e3b9c6e3.bindPopup(popup_e1896009127774a661ff739bb0b80db1)
+        ;
+
+        
+    
+    
+            var circle_marker_2929f6fbde3198f792a5c4de468694d0 = L.circleMarker(
+                [25.4807, 142.6476],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_f660f1a79839937b5fd4100b6bace28d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d44e24ad5ec70986967d45eeaa6795bb = $(`<div id="html_d44e24ad5ec70986967d45eeaa6795bb" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.8<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_f660f1a79839937b5fd4100b6bace28d.setContent(html_d44e24ad5ec70986967d45eeaa6795bb);
+            
+        
+
+        circle_marker_2929f6fbde3198f792a5c4de468694d0.bindPopup(popup_f660f1a79839937b5fd4100b6bace28d)
+        ;
+
+        
+    
+    
+            var circle_marker_c49c90dcf202e1f095aaa1d0a223708c = L.circleMarker(
+                [25.2754, 142.6811],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_9a284db7f0793f5a60f6ed1179b1d55a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3172bbd3bb97ce8ed2ab0c5e7bed4d04 = $(`<div id="html_3172bbd3bb97ce8ed2ab0c5e7bed4d04" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_9a284db7f0793f5a60f6ed1179b1d55a.setContent(html_3172bbd3bb97ce8ed2ab0c5e7bed4d04);
+            
+        
+
+        circle_marker_c49c90dcf202e1f095aaa1d0a223708c.bindPopup(popup_9a284db7f0793f5a60f6ed1179b1d55a)
+        ;
+
+        
+    
+    
+            var circle_marker_73dd83c94738efdf9d95ebde394ff7a9 = L.circleMarker(
+                [25.2908, 142.6431],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_3e79569f917758afcc5bd56106cf2585 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_33514ac3b65bd44b109eb314131fdbba = $(`<div id="html_33514ac3b65bd44b109eb314131fdbba" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_3e79569f917758afcc5bd56106cf2585.setContent(html_33514ac3b65bd44b109eb314131fdbba);
+            
+        
+
+        circle_marker_73dd83c94738efdf9d95ebde394ff7a9.bindPopup(popup_3e79569f917758afcc5bd56106cf2585)
+        ;
+
+        
+    
+    
+            var circle_marker_3471df5bba881451eb171a51992924c2 = L.circleMarker(
+                [25.4663, 142.6729],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_16f9c84df9e82f57404370c9e589525c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d0cf5d3da548ff618a57acbe7091b8ca = $(`<div id="html_d0cf5d3da548ff618a57acbe7091b8ca" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.2<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_16f9c84df9e82f57404370c9e589525c.setContent(html_d0cf5d3da548ff618a57acbe7091b8ca);
+            
+        
+
+        circle_marker_3471df5bba881451eb171a51992924c2.bindPopup(popup_16f9c84df9e82f57404370c9e589525c)
+        ;
+
+        
+    
+    
+            var circle_marker_5875487580a4196a87d447d48d3e4919 = L.circleMarker(
+                [25.4702, 142.8763],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_440fba7d8eb7542937e139f7613987c7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29082033e03b5f15cea0af7df3690603 = $(`<div id="html_29082033e03b5f15cea0af7df3690603" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_440fba7d8eb7542937e139f7613987c7.setContent(html_29082033e03b5f15cea0af7df3690603);
+            
+        
+
+        circle_marker_5875487580a4196a87d447d48d3e4919.bindPopup(popup_440fba7d8eb7542937e139f7613987c7)
+        ;
+
+        
+    
+    
+            var circle_marker_209fd3ede67b92b7cfc668c1b3170677 = L.circleMarker(
+                [-5.724, 154.336],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_1fca0a59605a0476ef74aad27efc392c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46ca0b1904aaeff473fefc798a2a80c1 = $(`<div id="html_46ca0b1904aaeff473fefc798a2a80c1" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> 143 km WNW of Panguna, Papua New Guinea<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_1fca0a59605a0476ef74aad27efc392c.setContent(html_46ca0b1904aaeff473fefc798a2a80c1);
+            
+        
+
+        circle_marker_209fd3ede67b92b7cfc668c1b3170677.bindPopup(popup_1fca0a59605a0476ef74aad27efc392c)
+        ;
+
+        
+    
+    
+            var circle_marker_bcd9b3b84e7dc0ec7f9ed75ac2b63ade = L.circleMarker(
+                [-5.7029, 154.4274],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_c8d8e0f89667188331e0732ae6247597 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bd27886237d33e1cc1aefc533b3919b8 = $(`<div id="html_bd27886237d33e1cc1aefc533b3919b8" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.2<br>     <b>Ubicación:</b> 135 km WNW of Panguna, Papua New Guinea<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_c8d8e0f89667188331e0732ae6247597.setContent(html_bd27886237d33e1cc1aefc533b3919b8);
+            
+        
+
+        circle_marker_bcd9b3b84e7dc0ec7f9ed75ac2b63ade.bindPopup(popup_c8d8e0f89667188331e0732ae6247597)
+        ;
+
+        
+    
+    
+            var circle_marker_27a624cc868568a7df142a321e466e98 = L.circleMarker(
+                [25.5181, 142.671],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_eed07b88ac6a6d92c73ae44eaa229071 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_41691b04234a0b5a86de8a5faa7f1656 = $(`<div id="html_41691b04234a0b5a86de8a5faa7f1656" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_eed07b88ac6a6d92c73ae44eaa229071.setContent(html_41691b04234a0b5a86de8a5faa7f1656);
+            
+        
+
+        circle_marker_27a624cc868568a7df142a321e466e98.bindPopup(popup_eed07b88ac6a6d92c73ae44eaa229071)
+        ;
+
+        
+    
+    
+            var circle_marker_f2683e674c572b50b224bb69f8791e7e = L.circleMarker(
+                [-24.3071, -67.9645],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_5b2b4ca4f387f31deed2a17372608892 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_437b95aae5a133269804fd066c2aa76d = $(`<div id="html_437b95aae5a133269804fd066c2aa76d" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.8<br>     <b>Ubicación:</b> 156 km S of San Pedro de Atacama, Chile<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_5b2b4ca4f387f31deed2a17372608892.setContent(html_437b95aae5a133269804fd066c2aa76d);
+            
+        
+
+        circle_marker_f2683e674c572b50b224bb69f8791e7e.bindPopup(popup_5b2b4ca4f387f31deed2a17372608892)
+        ;
+
+        
+    
+    
+            var circle_marker_219c5cdfab7d9e7961d3d0d23ad82e4c = L.circleMarker(
+                [25.6363, 142.4165],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_687c5644a18b5957119e2f51474d9ec8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bf25eeaa8c2bcc4259715b89e53e7138 = $(`<div id="html_bf25eeaa8c2bcc4259715b89e53e7138" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_687c5644a18b5957119e2f51474d9ec8.setContent(html_bf25eeaa8c2bcc4259715b89e53e7138);
+            
+        
+
+        circle_marker_219c5cdfab7d9e7961d3d0d23ad82e4c.bindPopup(popup_687c5644a18b5957119e2f51474d9ec8)
+        ;
+
+        
+    
+    
+            var circle_marker_dfe0d51e01f8e691efd67b7ed739cf2d = L.circleMarker(
+                [29.2849, 130.6395],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_35ab56dd85803c6c6ba161b96a066f22 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_33946ba4f9dcd321a2e37d381a7e60b3 = $(`<div id="html_33946ba4f9dcd321a2e37d381a7e60b3" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.9<br>     <b>Ubicación:</b> 105 km S of Koshima, Japan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_35ab56dd85803c6c6ba161b96a066f22.setContent(html_33946ba4f9dcd321a2e37d381a7e60b3);
+            
+        
+
+        circle_marker_dfe0d51e01f8e691efd67b7ed739cf2d.bindPopup(popup_35ab56dd85803c6c6ba161b96a066f22)
+        ;
+
+        
+    
+    
+            var circle_marker_900eeee6d332911f46a69ed305c57c26 = L.circleMarker(
+                [-56.2107, -27.275],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_918db64f72d0fb442ecbae20592a2c3e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4e90b64fa4f56f08f18c2e5bbf182a82 = $(`<div id="html_4e90b64fa4f56f08f18c2e5bbf182a82" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.1<br>     <b>Ubicación:</b> South Sandwich Islands region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_918db64f72d0fb442ecbae20592a2c3e.setContent(html_4e90b64fa4f56f08f18c2e5bbf182a82);
+            
+        
+
+        circle_marker_900eeee6d332911f46a69ed305c57c26.bindPopup(popup_918db64f72d0fb442ecbae20592a2c3e)
+        ;
+
+        
+    
+    
+            var circle_marker_ce295585d0f611d3b5d54f677a86ada8 = L.circleMarker(
+                [-14.757, -75.1545],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_bd12e7fbdc6418831bab96bf0dc5e61c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eb518e790c6c5a40b62c20d1b258ac91 = $(`<div id="html_eb518e790c6c5a40b62c20d1b258ac91" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5<br>     <b>Ubicación:</b> 12 km SE of Changuillo, Peru<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_bd12e7fbdc6418831bab96bf0dc5e61c.setContent(html_eb518e790c6c5a40b62c20d1b258ac91);
+            
+        
+
+        circle_marker_ce295585d0f611d3b5d54f677a86ada8.bindPopup(popup_bd12e7fbdc6418831bab96bf0dc5e61c)
+        ;
+
+        
+    
+    
+            var circle_marker_bfd3c6e3fb2a94f9fa3735e2cdbd2369 = L.circleMarker(
+                [-42.2511, 74.8589],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_4e09832d9c25b9f87a6cf0f4fdf70a74 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b8878fbde2c581a61c9098df6578cfd0 = $(`<div id="html_b8878fbde2c581a61c9098df6578cfd0" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.4<br>     <b>Ubicación:</b> Mid-Indian Ridge<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_4e09832d9c25b9f87a6cf0f4fdf70a74.setContent(html_b8878fbde2c581a61c9098df6578cfd0);
+            
+        
+
+        circle_marker_bfd3c6e3fb2a94f9fa3735e2cdbd2369.bindPopup(popup_4e09832d9c25b9f87a6cf0f4fdf70a74)
+        ;
+
+        
+    
+    
+            var circle_marker_a45a93ab445670f5f63d5ca65eb0030c = L.circleMarker(
+                [25.4828, 142.6825],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_96c3d51955ace1a108506c1913920055 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1f79fd28a6704ad8d28e0166a45a9592 = $(`<div id="html_1f79fd28a6704ad8d28e0166a45a9592" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_96c3d51955ace1a108506c1913920055.setContent(html_1f79fd28a6704ad8d28e0166a45a9592);
+            
+        
+
+        circle_marker_a45a93ab445670f5f63d5ca65eb0030c.bindPopup(popup_96c3d51955ace1a108506c1913920055)
+        ;
+
+        
+    
+    
+            var circle_marker_bbf22a338ba67d3435f92447e8b2d7e9 = L.circleMarker(
+                [-30.3078, -177.1614],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_da9fa93dd71cef52b435d088960af65e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bf085fff5ff9c3298cc19faf29c55731 = $(`<div id="html_bf085fff5ff9c3298cc19faf29c55731" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.5<br>     <b>Ubicación:</b> Kermadec Islands, New Zealand<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_da9fa93dd71cef52b435d088960af65e.setContent(html_bf085fff5ff9c3298cc19faf29c55731);
+            
+        
+
+        circle_marker_bbf22a338ba67d3435f92447e8b2d7e9.bindPopup(popup_da9fa93dd71cef52b435d088960af65e)
+        ;
+
+        
+    
+    
+            var circle_marker_b7efd5fdd4eb68cfbe582fdb3c1c8ad4 = L.circleMarker(
+                [25.484, 142.8226],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_59e1ebe3822a5e82dfc9efff1597d59d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aae90f8cf39a24c46ac6d4531f8b65c0 = $(`<div id="html_aae90f8cf39a24c46ac6d4531f8b65c0" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.2<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_59e1ebe3822a5e82dfc9efff1597d59d.setContent(html_aae90f8cf39a24c46ac6d4531f8b65c0);
+            
+        
+
+        circle_marker_b7efd5fdd4eb68cfbe582fdb3c1c8ad4.bindPopup(popup_59e1ebe3822a5e82dfc9efff1597d59d)
+        ;
+
+        
+    
+    
+            var circle_marker_f1646ae811d16f4fcae6524e21674b1b = L.circleMarker(
+                [25.4621, 142.8479],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_915ad49428e2290201528be80edc0716 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a8156239b54a83e321537df9fe2869f1 = $(`<div id="html_a8156239b54a83e321537df9fe2869f1" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.8<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_915ad49428e2290201528be80edc0716.setContent(html_a8156239b54a83e321537df9fe2869f1);
+            
+        
+
+        circle_marker_f1646ae811d16f4fcae6524e21674b1b.bindPopup(popup_915ad49428e2290201528be80edc0716)
+        ;
+
+        
+    
+    
+            var circle_marker_25ee09afb402aba84cf3e290732ffde0 = L.circleMarker(
+                [29.8251, 92.1809],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_181eff30ccd1abc9ff2b94893c93869c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_104cf3288fd813a63976d1118c43b192 = $(`<div id="html_104cf3288fd813a63976d1118c43b192" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 106 km E of Lhasa, China<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_181eff30ccd1abc9ff2b94893c93869c.setContent(html_104cf3288fd813a63976d1118c43b192);
+            
+        
+
+        circle_marker_25ee09afb402aba84cf3e290732ffde0.bindPopup(popup_181eff30ccd1abc9ff2b94893c93869c)
+        ;
+
+        
+    
+    
+            var circle_marker_c13e51dee03dbaff0fe4bacc8b04995b = L.circleMarker(
+                [-7.4485, 129.0443],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_36bceeb46f35e33cd47081291b43f804 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0eb970218371df125b2a853c4d17c6e2 = $(`<div id="html_0eb970218371df125b2a853c4d17c6e2" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> 254 km ENE of Lospalos, Timor Leste<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_36bceeb46f35e33cd47081291b43f804.setContent(html_0eb970218371df125b2a853c4d17c6e2);
+            
+        
+
+        circle_marker_c13e51dee03dbaff0fe4bacc8b04995b.bindPopup(popup_36bceeb46f35e33cd47081291b43f804)
+        ;
+
+        
+    
+    
+            var circle_marker_16ec4ff50129ebe5d3efc5f4e65175a9 = L.circleMarker(
+                [23.5462, 121.6662],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_6f93c18ab50501620ad4b0c72f6a7435 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a3d6d9f93bec29540af01afa2145c7c5 = $(`<div id="html_a3d6d9f93bec29540af01afa2145c7c5" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5<br>     <b>Ubicación:</b> 48 km S of Hualien City, Taiwan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_6f93c18ab50501620ad4b0c72f6a7435.setContent(html_a3d6d9f93bec29540af01afa2145c7c5);
+            
+        
+
+        circle_marker_16ec4ff50129ebe5d3efc5f4e65175a9.bindPopup(popup_6f93c18ab50501620ad4b0c72f6a7435)
+        ;
+
+        
+    
+    
+            var circle_marker_37b98fc9c829860261f29affbbb2eea9 = L.circleMarker(
+                [-18.0569, -177.8409],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_1b17d337b481e1b39888d003694a6ec8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3c62f39a008a101f07fd7b653c963500 = $(`<div id="html_3c62f39a008a101f07fd7b653c963500" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.9<br>     <b>Ubicación:</b> Fiji region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_1b17d337b481e1b39888d003694a6ec8.setContent(html_3c62f39a008a101f07fd7b653c963500);
+            
+        
+
+        circle_marker_37b98fc9c829860261f29affbbb2eea9.bindPopup(popup_1b17d337b481e1b39888d003694a6ec8)
+        ;
+
+        
+    
+    
+            var circle_marker_28739ced95a652acd333b633a611d002 = L.circleMarker(
+                [-20.8572, -178.643],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_baa184902ed93d2a9434703f11d392c2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_656f9ae48696b5e0a0b153c21a27ba9c = $(`<div id="html_656f9ae48696b5e0a0b153c21a27ba9c" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.1<br>     <b>Ubicación:</b> Fiji region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_baa184902ed93d2a9434703f11d392c2.setContent(html_656f9ae48696b5e0a0b153c21a27ba9c);
+            
+        
+
+        circle_marker_28739ced95a652acd333b633a611d002.bindPopup(popup_baa184902ed93d2a9434703f11d392c2)
+        ;
+
+        
+    
+    
+            var circle_marker_7e3c8790221e1ddf0dacc04b417aa019 = L.circleMarker(
+                [-11.9576, 166.1371],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_57a41ae62c6734f47177fe1b219db36f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_23b3f514ecf20466175fefa3466603fd = $(`<div id="html_23b3f514ecf20466175fefa3466603fd" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 141 km SSE of Lata, Solomon Islands<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_57a41ae62c6734f47177fe1b219db36f.setContent(html_23b3f514ecf20466175fefa3466603fd);
+            
+        
+
+        circle_marker_7e3c8790221e1ddf0dacc04b417aa019.bindPopup(popup_57a41ae62c6734f47177fe1b219db36f)
+        ;
+
+        
+    
+    
+            var circle_marker_c7401cdd46cdd2654827f33f4928042e = L.circleMarker(
+                [-33.6041, -177.6811],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_d337ce99c6cd9cdc1aab9a51259a54cd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d1c4e4d27cff0e581be9fdc62cfa0d76 = $(`<div id="html_d1c4e4d27cff0e581be9fdc62cfa0d76" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> south of the Kermadec Islands<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_d337ce99c6cd9cdc1aab9a51259a54cd.setContent(html_d1c4e4d27cff0e581be9fdc62cfa0d76);
+            
+        
+
+        circle_marker_c7401cdd46cdd2654827f33f4928042e.bindPopup(popup_d337ce99c6cd9cdc1aab9a51259a54cd)
+        ;
+
+        
+    
+    
+            var circle_marker_8ebcce32717daf649ea9c5b946eef0a7 = L.circleMarker(
+                [-4.7902, 153.302],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_3d2dc5c6d772b651609b40b82689ad7d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_be24fbf120847c9991a55c2313b8c6fe = $(`<div id="html_be24fbf120847c9991a55c2313b8c6fe" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.9<br>     <b>Ubicación:</b> 124 km ESE of Kokopo, Papua New Guinea<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_3d2dc5c6d772b651609b40b82689ad7d.setContent(html_be24fbf120847c9991a55c2313b8c6fe);
+            
+        
+
+        circle_marker_8ebcce32717daf649ea9c5b946eef0a7.bindPopup(popup_3d2dc5c6d772b651609b40b82689ad7d)
+        ;
+
+        
+    
+    
+            var circle_marker_15dcd55582115e86af26ec2b1120e398 = L.circleMarker(
+                [-3.3545, 139.8406],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_216478d6a176903b9e4f57cb88f55026 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d7b13c5785947b8a649dd9dfdeb51104 = $(`<div id="html_d7b13c5785947b8a649dd9dfdeb51104" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 121 km SW of Abepura, Indonesia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_216478d6a176903b9e4f57cb88f55026.setContent(html_d7b13c5785947b8a649dd9dfdeb51104);
+            
+        
+
+        circle_marker_15dcd55582115e86af26ec2b1120e398.bindPopup(popup_216478d6a176903b9e4f57cb88f55026)
+        ;
+
+        
+    
+    
+            var circle_marker_d71a5966f76e17aa89d8b474bc58fc22 = L.circleMarker(
+                [-21.3652, -68.6776],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_3e69bc4bc5268ca6057670209898ee62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_029d29a4c989a0132d5fe5216f05cb08 = $(`<div id="html_029d29a4c989a0132d5fe5216f05cb08" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5<br>     <b>Ubicación:</b> 46 km WSW of Ollagüe, Chile<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_3e69bc4bc5268ca6057670209898ee62.setContent(html_029d29a4c989a0132d5fe5216f05cb08);
+            
+        
+
+        circle_marker_d71a5966f76e17aa89d8b474bc58fc22.bindPopup(popup_3e69bc4bc5268ca6057670209898ee62)
+        ;
+
+        
+    
+    
+            var circle_marker_fa38c8c41f50c97b8a677bbb5d4862f5 = L.circleMarker(
+                [-12.9349, -75.1973],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_3cbdff6830075c4d688fafc8105700e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_efb0c426f720584495e368fdec1e7390 = $(`<div id="html_efb0c426f720584495e368fdec1e7390" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.7<br>     <b>Ubicación:</b> 14 km NNW of Santa Ana, Peru<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_3cbdff6830075c4d688fafc8105700e2.setContent(html_efb0c426f720584495e368fdec1e7390);
+            
+        
+
+        circle_marker_fa38c8c41f50c97b8a677bbb5d4862f5.bindPopup(popup_3cbdff6830075c4d688fafc8105700e2)
+        ;
+
+        
+    
+    
+            var circle_marker_3e0c9401353e1a0b25ccf4ea6dfdbd42 = L.circleMarker(
+                [24.0815, 121.8759],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_ef857ddb958b27d46ce0fab5718aabf2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1666a8c996940bb7d0d38bb8c2523a8e = $(`<div id="html_1666a8c996940bb7d0d38bb8c2523a8e" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 29 km ENE of Hualien City, Taiwan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_ef857ddb958b27d46ce0fab5718aabf2.setContent(html_1666a8c996940bb7d0d38bb8c2523a8e);
+            
+        
+
+        circle_marker_3e0c9401353e1a0b25ccf4ea6dfdbd42.bindPopup(popup_ef857ddb958b27d46ce0fab5718aabf2)
+        ;
+
+        
+    
+    
+            var circle_marker_50d16961ee84ca579531e81e298be2cf = L.circleMarker(
+                [19.16, -155.511833333333],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_f2886c5fbb47f9ee8613a35d44cf70ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_87c739f624cf7a90501b6bc020959651 = $(`<div id="html_87c739f624cf7a90501b6bc020959651" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.75<br>     <b>Ubicación:</b> 5 km SW of Pāhala, Hawaii<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_f2886c5fbb47f9ee8613a35d44cf70ee.setContent(html_87c739f624cf7a90501b6bc020959651);
+            
+        
+
+        circle_marker_50d16961ee84ca579531e81e298be2cf.bindPopup(popup_f2886c5fbb47f9ee8613a35d44cf70ee)
+        ;
+
+        
+    
+    
+            var circle_marker_97ffa216218b1a9f0cf0912bd73f41d2 = L.circleMarker(
+                [49.4193, 147.1684],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_86ab84a581085763ae5c90912938db7b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_04da3dbcdf70d17df43bf1a63045835c = $(`<div id="html_04da3dbcdf70d17df43bf1a63045835c" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.3<br>     <b>Ubicación:</b> 296 km E of Poronaysk, Russia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_86ab84a581085763ae5c90912938db7b.setContent(html_04da3dbcdf70d17df43bf1a63045835c);
+            
+        
+
+        circle_marker_97ffa216218b1a9f0cf0912bd73f41d2.bindPopup(popup_86ab84a581085763ae5c90912938db7b)
+        ;
+
+        
+    
+    
+            var circle_marker_38481a55314ad0fe05a88624c0d315ad = L.circleMarker(
+                [38.784, 70.2761],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_3d3c2338a3021ea7afda5a36073a1d0f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_66a424320a03730239e1645dc5a7bce1 = $(`<div id="html_66a424320a03730239e1645dc5a7bce1" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 27 km SSE of Novobod, Tajikistan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_3d3c2338a3021ea7afda5a36073a1d0f.setContent(html_66a424320a03730239e1645dc5a7bce1);
+            
+        
+
+        circle_marker_38481a55314ad0fe05a88624c0d315ad.bindPopup(popup_3d3c2338a3021ea7afda5a36073a1d0f)
+        ;
+
+        
+    
+    
+            var circle_marker_502350013a60db2fbe50e3d37331bacc = L.circleMarker(
+                [38.5183, 70.5238],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_f2f626d22d519366bae27795759f86b9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1df758038840e3fb85d81f5ff673e645 = $(`<div id="html_1df758038840e3fb85d81f5ff673e645" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 58 km SSE of Rasht, Tajikistan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_f2f626d22d519366bae27795759f86b9.setContent(html_1df758038840e3fb85d81f5ff673e645);
+            
+        
+
+        circle_marker_502350013a60db2fbe50e3d37331bacc.bindPopup(popup_f2f626d22d519366bae27795759f86b9)
+        ;
+
+        
+    
+    
+            var circle_marker_259cfa179336df7a7f035beb3362b412 = L.circleMarker(
+                [5.2975, -77.4477],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_2dc4cff809e7f3f4146f0b7372d0ea50 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9601d489ecf29e756744f0fe70d68755 = $(`<div id="html_9601d489ecf29e756744f0fe70d68755" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5<br>     <b>Ubicación:</b> 39 km NNW of Pizarro, Colombia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_2dc4cff809e7f3f4146f0b7372d0ea50.setContent(html_9601d489ecf29e756744f0fe70d68755);
+            
+        
+
+        circle_marker_259cfa179336df7a7f035beb3362b412.bindPopup(popup_2dc4cff809e7f3f4146f0b7372d0ea50)
+        ;
+
+        
+    
+    
+            var circle_marker_5c4876b7d44040ff21366c517ed68679 = L.circleMarker(
+                [16.2706, 122.229],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_e876dbcba5efa4a63fa99633f6b5721a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2bcd6e743afacbf4aefa63c5774a3e25 = $(`<div id="html_2bcd6e743afacbf4aefa63c5774a3e25" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 49 km SE of Minuri, Philippines<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_e876dbcba5efa4a63fa99633f6b5721a.setContent(html_2bcd6e743afacbf4aefa63c5774a3e25);
+            
+        
+
+        circle_marker_5c4876b7d44040ff21366c517ed68679.bindPopup(popup_e876dbcba5efa4a63fa99633f6b5721a)
+        ;
+
+        
+    
+    
+            var circle_marker_48ca5d96f507ca563bc353ec1e1b35ee = L.circleMarker(
+                [-20.116, -173.9599],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_1d03e7170bb75a61e08a5ea9d386f44f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4cb771466d4d6abe3de8c5e93a241665 = $(`<div id="html_4cb771466d4d6abe3de8c5e93a241665" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5<br>     <b>Ubicación:</b> 53 km SE of Pangai, Tonga<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_1d03e7170bb75a61e08a5ea9d386f44f.setContent(html_4cb771466d4d6abe3de8c5e93a241665);
+            
+        
+
+        circle_marker_48ca5d96f507ca563bc353ec1e1b35ee.bindPopup(popup_1d03e7170bb75a61e08a5ea9d386f44f)
+        ;
+
+        
+    
+    
+            var circle_marker_fab0e1868661f38983ae4f1e77e2505f = L.circleMarker(
+                [25.434, 142.5729],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_f972d471a489b66efc1596abb143e0c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb2e155434d1edc80a6e34ecf1d8da93 = $(`<div id="html_fb2e155434d1edc80a6e34ecf1d8da93" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_f972d471a489b66efc1596abb143e0c3.setContent(html_fb2e155434d1edc80a6e34ecf1d8da93);
+            
+        
+
+        circle_marker_fab0e1868661f38983ae4f1e77e2505f.bindPopup(popup_f972d471a489b66efc1596abb143e0c3)
+        ;
+
+        
+    
+    
+            var circle_marker_f19c15f1ceb52539d5e901d94c6ef11d = L.circleMarker(
+                [-12.3355, 166.7681],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_c5a7bb957eb41a861da520f1f06bf1c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af84afbd7793634683403098997a5176 = $(`<div id="html_af84afbd7793634683403098997a5176" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> 190 km NNW of Sola, Vanuatu<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_c5a7bb957eb41a861da520f1f06bf1c3.setContent(html_af84afbd7793634683403098997a5176);
+            
+        
+
+        circle_marker_f19c15f1ceb52539d5e901d94c6ef11d.bindPopup(popup_c5a7bb957eb41a861da520f1f06bf1c3)
+        ;
+
+        
+    
+    
+            var circle_marker_e7df7ddec02b1d3ef94cad5587eed855 = L.circleMarker(
+                [35.5317, 140.0284],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_0fe0860bf51f012824c5e7572bb1c43c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d0701b6e57c6d2cdee84e3affb13ea6d = $(`<div id="html_d0701b6e57c6d2cdee84e3affb13ea6d" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 5 km WNW of Ichihara, Japan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_0fe0860bf51f012824c5e7572bb1c43c.setContent(html_d0701b6e57c6d2cdee84e3affb13ea6d);
+            
+        
+
+        circle_marker_e7df7ddec02b1d3ef94cad5587eed855.bindPopup(popup_0fe0860bf51f012824c5e7572bb1c43c)
+        ;
+
+        
+    
+    
+            var circle_marker_120b262cea725531f2bc36a3f5af24b7 = L.circleMarker(
+                [-17.5119, -69.2447],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_b3ae99cb274437554e185c2107141abd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1e8d4192033f1efdb78b391c19c4bf8c = $(`<div id="html_1e8d4192033f1efdb78b391c19c4bf8c" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> 81 km ENE of Palca, Peru<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_b3ae99cb274437554e185c2107141abd.setContent(html_1e8d4192033f1efdb78b391c19c4bf8c);
+            
+        
+
+        circle_marker_120b262cea725531f2bc36a3f5af24b7.bindPopup(popup_b3ae99cb274437554e185c2107141abd)
+        ;
+
+        
+    
+    
+            var circle_marker_b89b5e601bd9451e05930bf2c4c8ebee = L.circleMarker(
+                [-20.3254, -177.55],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_f2f29dbe9901750543ce4b8efe08295a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_910ea635ed30e4b566744ff51e944f8b = $(`<div id="html_910ea635ed30e4b566744ff51e944f8b" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 252 km WNW of Houma, Tonga<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_f2f29dbe9901750543ce4b8efe08295a.setContent(html_910ea635ed30e4b566744ff51e944f8b);
+            
+        
+
+        circle_marker_b89b5e601bd9451e05930bf2c4c8ebee.bindPopup(popup_f2f29dbe9901750543ce4b8efe08295a)
+        ;
+
+        
+    
+    
+            var circle_marker_57a191babf5274987ae7f042b07160f7 = L.circleMarker(
+                [8.0326, 126.3166],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_c54eef4ca85cc5584d5b638d146a5835 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_da3028998d391806243957cc884ab2a4 = $(`<div id="html_da3028998d391806243957cc884ab2a4" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.9<br>     <b>Ubicación:</b> 10 km W of Lingig, Philippines<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_c54eef4ca85cc5584d5b638d146a5835.setContent(html_da3028998d391806243957cc884ab2a4);
+            
+        
+
+        circle_marker_57a191babf5274987ae7f042b07160f7.bindPopup(popup_c54eef4ca85cc5584d5b638d146a5835)
+        ;
+
+        
+    
+    
+            var circle_marker_20e210ead14d632f2452a579185d8406 = L.circleMarker(
+                [56.3918, -34.0674],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_e7b216af3ed2a3009f608314d149457c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_45342eb40c923ed6c5abbe2bf6dffa56 = $(`<div id="html_45342eb40c923ed6c5abbe2bf6dffa56" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.9<br>     <b>Ubicación:</b> Reykjanes Ridge<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_e7b216af3ed2a3009f608314d149457c.setContent(html_45342eb40c923ed6c5abbe2bf6dffa56);
+            
+        
+
+        circle_marker_20e210ead14d632f2452a579185d8406.bindPopup(popup_e7b216af3ed2a3009f608314d149457c)
+        ;
+
+        
+    
+    
+            var circle_marker_4c608b77c906e7d1ff67b1fdc80039f8 = L.circleMarker(
+                [-8.917, 110.2288],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_201c429ea4120a37161b29616825a789 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b43d72aa7b17225f9d83dc2453109df = $(`<div id="html_4b43d72aa7b17225f9d83dc2453109df" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> 107 km S of Bambanglipuro, Indonesia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_201c429ea4120a37161b29616825a789.setContent(html_4b43d72aa7b17225f9d83dc2453109df);
+            
+        
+
+        circle_marker_4c608b77c906e7d1ff67b1fdc80039f8.bindPopup(popup_201c429ea4120a37161b29616825a789)
+        ;
+
+        
+    
+    
+            var circle_marker_42a52bc7de323f59457e71c820d9d541 = L.circleMarker(
+                [-19.0011, -66.918],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_991fed532e6d309b8c44e078221b101e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d37d3053653ebe00da11913f023047e7 = $(`<div id="html_d37d3053653ebe00da11913f023047e7" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 19 km SW of Challapata, Bolivia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_991fed532e6d309b8c44e078221b101e.setContent(html_d37d3053653ebe00da11913f023047e7);
+            
+        
+
+        circle_marker_42a52bc7de323f59457e71c820d9d541.bindPopup(popup_991fed532e6d309b8c44e078221b101e)
+        ;
+
+        
+    
+    
+            var circle_marker_270995341206d9439f3b547ab9e34cc5 = L.circleMarker(
+                [-53.8662, 2.802],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_cd881f377b3f74afe5449e8774d5a407 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3bbcc1a0f3dfd136b2c0e118ad5cc1df = $(`<div id="html_3bbcc1a0f3dfd136b2c0e118ad5cc1df" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.9<br>     <b>Ubicación:</b> Bouvet Island region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_cd881f377b3f74afe5449e8774d5a407.setContent(html_3bbcc1a0f3dfd136b2c0e118ad5cc1df);
+            
+        
+
+        circle_marker_270995341206d9439f3b547ab9e34cc5.bindPopup(popup_cd881f377b3f74afe5449e8774d5a407)
+        ;
+
+        
+    
+    
+            var circle_marker_6bc7abe8b27b980d7eb1f61d1ed1089c = L.circleMarker(
+                [25.4788, 142.7637],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_6a5605d472376b3f8e81d5958a6a64b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b3ead97ec5c819faeeda136e2cfb6784 = $(`<div id="html_b3ead97ec5c819faeeda136e2cfb6784" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_6a5605d472376b3f8e81d5958a6a64b0.setContent(html_b3ead97ec5c819faeeda136e2cfb6784);
+            
+        
+
+        circle_marker_6bc7abe8b27b980d7eb1f61d1ed1089c.bindPopup(popup_6a5605d472376b3f8e81d5958a6a64b0)
+        ;
+
+        
+    
+    
+            var circle_marker_83a7a6d4bb8073c3805e32c9c49ace10 = L.circleMarker(
+                [25.4153, 142.4937],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_58c50f95d88cfd43a3761d0bb1f5c2f5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bf6eb742e17ef2158ebcb54da54bf6c9 = $(`<div id="html_bf6eb742e17ef2158ebcb54da54bf6c9" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_58c50f95d88cfd43a3761d0bb1f5c2f5.setContent(html_bf6eb742e17ef2158ebcb54da54bf6c9);
+            
+        
+
+        circle_marker_83a7a6d4bb8073c3805e32c9c49ace10.bindPopup(popup_58c50f95d88cfd43a3761d0bb1f5c2f5)
+        ;
+
+        
+    
+    
+            var circle_marker_3d524e7eaabb7dd645c61185d0cf962b = L.circleMarker(
+                [40.0979, 23.2479],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_88ac837e04ee5bd64d2759e2067c55f1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_204d6c487e3c5728a42dd50cbce9cfa8 = $(`<div id="html_204d6c487e3c5728a42dd50cbce9cfa8" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.2<br>     <b>Ubicación:</b> 12 km SSW of Néa Poteídaia, Greece<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_88ac837e04ee5bd64d2759e2067c55f1.setContent(html_204d6c487e3c5728a42dd50cbce9cfa8);
+            
+        
+
+        circle_marker_3d524e7eaabb7dd645c61185d0cf962b.bindPopup(popup_88ac837e04ee5bd64d2759e2067c55f1)
+        ;
+
+        
+    
+    
+            var circle_marker_8b36246ae8520b0ee8051493905fa00f = L.circleMarker(
+                [-3.415, 145.8694],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_86d03dbdf809039b780114ca674a64c7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d661c305bcaac2b72e9b9b24a7d6fadd = $(`<div id="html_d661c305bcaac2b72e9b9b24a7d6fadd" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5<br>     <b>Ubicación:</b> 199 km N of Madang, Papua New Guinea<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_86d03dbdf809039b780114ca674a64c7.setContent(html_d661c305bcaac2b72e9b9b24a7d6fadd);
+            
+        
+
+        circle_marker_8b36246ae8520b0ee8051493905fa00f.bindPopup(popup_86d03dbdf809039b780114ca674a64c7)
+        ;
+
+        
+    
+    
+            var circle_marker_c2784bebcc29130f273ec7c7c89fc1ea = L.circleMarker(
+                [25.4158, 142.645],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_14ceccea0a565c984113b1c16c734e53 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2521ed51feb25ddbf587ee448e77f3d2 = $(`<div id="html_2521ed51feb25ddbf587ee448e77f3d2" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.8<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_14ceccea0a565c984113b1c16c734e53.setContent(html_2521ed51feb25ddbf587ee448e77f3d2);
+            
+        
+
+        circle_marker_c2784bebcc29130f273ec7c7c89fc1ea.bindPopup(popup_14ceccea0a565c984113b1c16c734e53)
+        ;
+
+        
+    
+    
+            var circle_marker_9f537f33ecdeff5e6a17f4b3eec6ea79 = L.circleMarker(
+                [25.4729, 142.5714],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_c7da754d7b0f2d2607671f5b9480edbd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a6466a4a2373f0c8961c74324743f797 = $(`<div id="html_a6466a4a2373f0c8961c74324743f797" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.8<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_c7da754d7b0f2d2607671f5b9480edbd.setContent(html_a6466a4a2373f0c8961c74324743f797);
+            
+        
+
+        circle_marker_9f537f33ecdeff5e6a17f4b3eec6ea79.bindPopup(popup_c7da754d7b0f2d2607671f5b9480edbd)
+        ;
+
+        
+    
+    
+            var circle_marker_7af735a804344b194d4e938c729c9e23 = L.circleMarker(
+                [25.4098, 142.5467],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_f058f796e84b84dcf16962458c5acf0a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_28ddd545ade6a0592fe192211060bbac = $(`<div id="html_28ddd545ade6a0592fe192211060bbac" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_f058f796e84b84dcf16962458c5acf0a.setContent(html_28ddd545ade6a0592fe192211060bbac);
+            
+        
+
+        circle_marker_7af735a804344b194d4e938c729c9e23.bindPopup(popup_f058f796e84b84dcf16962458c5acf0a)
+        ;
+
+        
+    
+    
+            var circle_marker_4b6f00c2f8482872311e59607f1931e6 = L.circleMarker(
+                [25.4573, 142.5981],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_c81824d7550ffa5cd0a37b0ff07aba62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_86b6eb247334baed20529c44d7ea43f9 = $(`<div id="html_86b6eb247334baed20529c44d7ea43f9" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.9<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_c81824d7550ffa5cd0a37b0ff07aba62.setContent(html_86b6eb247334baed20529c44d7ea43f9);
+            
+        
+
+        circle_marker_4b6f00c2f8482872311e59607f1931e6.bindPopup(popup_c81824d7550ffa5cd0a37b0ff07aba62)
+        ;
+
+        
+    
+    
+            var circle_marker_e466335c94106a4e66c72272220ca387 = L.circleMarker(
+                [-21.5515, -178.8835],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_77f48e71bdd015407751075bcb90ba80 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_167b145177d7eb220d65bcad808ca6f2 = $(`<div id="html_167b145177d7eb220d65bcad808ca6f2" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5<br>     <b>Ubicación:</b> Fiji region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_77f48e71bdd015407751075bcb90ba80.setContent(html_167b145177d7eb220d65bcad808ca6f2);
+            
+        
+
+        circle_marker_e466335c94106a4e66c72272220ca387.bindPopup(popup_77f48e71bdd015407751075bcb90ba80)
+        ;
+
+        
+    
+    
+            var circle_marker_5ae262f58c1c9bf101d4af7bb83464d8 = L.circleMarker(
+                [51.4872, -175.6262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_25e65a409e5e149f8e477c42c99256bf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_483921882bc7d8ccb323faab62291cce = $(`<div id="html_483921882bc7d8ccb323faab62291cce" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.8<br>     <b>Ubicación:</b> 81 km ESE of Adak, Alaska<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_25e65a409e5e149f8e477c42c99256bf.setContent(html_483921882bc7d8ccb323faab62291cce);
+            
+        
+
+        circle_marker_5ae262f58c1c9bf101d4af7bb83464d8.bindPopup(popup_25e65a409e5e149f8e477c42c99256bf)
+        ;
+
+        
+    
+    
+            var circle_marker_8f4dc1533c729db3e4946c7d99799623 = L.circleMarker(
+                [-7.5123, 126.7752],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_47fbfbbc1bae8306a68cba3e13f9a3de = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6bab2e105c3a57a525ca27928e8ed529 = $(`<div id="html_6bab2e105c3a57a525ca27928e8ed529" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.8<br>     <b>Ubicación:</b> 112 km NNE of Baukau, Timor Leste<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_47fbfbbc1bae8306a68cba3e13f9a3de.setContent(html_6bab2e105c3a57a525ca27928e8ed529);
+            
+        
+
+        circle_marker_8f4dc1533c729db3e4946c7d99799623.bindPopup(popup_47fbfbbc1bae8306a68cba3e13f9a3de)
+        ;
+
+        
+    
+    
+            var circle_marker_baac7bda6d232f50b5b23d9de5eabca6 = L.circleMarker(
+                [-5.4518, 152.0393],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_2d784648846965e350587ac161b12244 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_942e758d892481e960366259e486e7ab = $(`<div id="html_942e758d892481e960366259e486e7ab" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.9<br>     <b>Ubicación:</b> 125 km SSW of Kokopo, Papua New Guinea<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_2d784648846965e350587ac161b12244.setContent(html_942e758d892481e960366259e486e7ab);
+            
+        
+
+        circle_marker_baac7bda6d232f50b5b23d9de5eabca6.bindPopup(popup_2d784648846965e350587ac161b12244)
+        ;
+
+        
+    
+    
+            var circle_marker_894202be28a767c67af140a8b8e6476a = L.circleMarker(
+                [25.5322, 128.8029],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_472cc75f024399dd88ebee8d167aa0e0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29dd1631df631e5292a4335ade4e6886 = $(`<div id="html_29dd1631df631e5292a4335ade4e6886" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 128 km SE of Katsuren-haebaru, Japan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_472cc75f024399dd88ebee8d167aa0e0.setContent(html_29dd1631df631e5292a4335ade4e6886);
+            
+        
+
+        circle_marker_894202be28a767c67af140a8b8e6476a.bindPopup(popup_472cc75f024399dd88ebee8d167aa0e0)
+        ;
+
+        
+    
+    
+            var circle_marker_3fc0a9e227adcaa6809b22388cea252c = L.circleMarker(
+                [-35.7026, -69.5173],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_4564b184e18c1107b0ccb1624d17437a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d13a09deca7ab8aa9e35ca2d8a4c024 = $(`<div id="html_1d13a09deca7ab8aa9e35ca2d8a4c024" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.4<br>     <b>Ubicación:</b> 129 km NNE of Barrancas, Argentina<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_4564b184e18c1107b0ccb1624d17437a.setContent(html_1d13a09deca7ab8aa9e35ca2d8a4c024);
+            
+        
+
+        circle_marker_3fc0a9e227adcaa6809b22388cea252c.bindPopup(popup_4564b184e18c1107b0ccb1624d17437a)
+        ;
+
+        
+    
+    
+            var circle_marker_45caee111a63d515353d7bc180e0e45a = L.circleMarker(
+                [-26.4653, -11.3971],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_1c115787fefe0cafdcdf63c148f44bd1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_44fda99a258f2200d10352469414b1d2 = $(`<div id="html_44fda99a258f2200d10352469414b1d2" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> southern Mid-Atlantic Ridge<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_1c115787fefe0cafdcdf63c148f44bd1.setContent(html_44fda99a258f2200d10352469414b1d2);
+            
+        
+
+        circle_marker_45caee111a63d515353d7bc180e0e45a.bindPopup(popup_1c115787fefe0cafdcdf63c148f44bd1)
+        ;
+
+        
+    
+    
+            var circle_marker_f0a114fac774c096007d5612954536ef = L.circleMarker(
+                [35.2471, 52.3587],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_41881b35f2f749f3c45efb29a6244764 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a192cb7901f0c007e2b9c96f748dec5 = $(`<div id="html_1a192cb7901f0c007e2b9c96f748dec5" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 4 km ENE of Īstgāh-e Rāh Āhan-e Garmsār, Iran<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_41881b35f2f749f3c45efb29a6244764.setContent(html_1a192cb7901f0c007e2b9c96f748dec5);
+            
+        
+
+        circle_marker_f0a114fac774c096007d5612954536ef.bindPopup(popup_41881b35f2f749f3c45efb29a6244764)
+        ;
+
+        
+    
+    
+            var circle_marker_146797c40f0862a0d4563b7af7273714 = L.circleMarker(
+                [-37.2505, 177.4296],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_a3d64ee0006e3fe1a5c82bf41f909d95 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b013646b18ef2e585f11e764b35e2f3 = $(`<div id="html_8b013646b18ef2e585f11e764b35e2f3" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 85 km N of Opotiki, New Zealand<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_a3d64ee0006e3fe1a5c82bf41f909d95.setContent(html_8b013646b18ef2e585f11e764b35e2f3);
+            
+        
+
+        circle_marker_146797c40f0862a0d4563b7af7273714.bindPopup(popup_a3d64ee0006e3fe1a5c82bf41f909d95)
+        ;
+
+        
+    
+    
+            var circle_marker_ef9f10937fa021d583ddad5a551a3e6a = L.circleMarker(
+                [0.4725, 126.6829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_cecd245ab2b8a2b2370686515cae72d4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b9f755d401175be4804c26624f949b71 = $(`<div id="html_b9f755d401175be4804c26624f949b71" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 85 km WSW of Ternate, Indonesia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_cecd245ab2b8a2b2370686515cae72d4.setContent(html_b9f755d401175be4804c26624f949b71);
+            
+        
+
+        circle_marker_ef9f10937fa021d583ddad5a551a3e6a.bindPopup(popup_cecd245ab2b8a2b2370686515cae72d4)
+        ;
+
+        
+    
+    
+            var circle_marker_8d518da6ef5e1cb7779be51d124587d1 = L.circleMarker(
+                [9.239, 40.1035],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_a6d06abc57a3f6dfd3c0787fdb17c4e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_46db8cea484d4cfc374df6da1b4cf219 = $(`<div id="html_46db8cea484d4cfc374df6da1b4cf219" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 29 km NNW of Āwash, Ethiopia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_a6d06abc57a3f6dfd3c0787fdb17c4e2.setContent(html_46db8cea484d4cfc374df6da1b4cf219);
+            
+        
+
+        circle_marker_8d518da6ef5e1cb7779be51d124587d1.bindPopup(popup_a6d06abc57a3f6dfd3c0787fdb17c4e2)
+        ;
+
+        
+    
+    
+            var circle_marker_14c0f6521a33e36da24b23e2d23a8df5 = L.circleMarker(
+                [12.545, -87.9507],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_a249709e02f72061c02855742fd4787f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_94f24411d5e5b93e6493b6926f46e337 = $(`<div id="html_94f24411d5e5b93e6493b6926f46e337" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.1<br>     <b>Ubicación:</b> 58 km WSW of Jiquilillo, Nicaragua<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_a249709e02f72061c02855742fd4787f.setContent(html_94f24411d5e5b93e6493b6926f46e337);
+            
+        
+
+        circle_marker_14c0f6521a33e36da24b23e2d23a8df5.bindPopup(popup_a249709e02f72061c02855742fd4787f)
+        ;
+
+        
+    
+    
+            var circle_marker_ee7997c095b21fad04ebecdc6bd2ba0d = L.circleMarker(
+                [25.4405, 142.8273],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_e58ac8a50cb0ad7d9c97d3e2b0959eb5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3fa8f17705431c2dabfa555c1b2c89d0 = $(`<div id="html_3fa8f17705431c2dabfa555c1b2c89d0" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.9<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_e58ac8a50cb0ad7d9c97d3e2b0959eb5.setContent(html_3fa8f17705431c2dabfa555c1b2c89d0);
+            
+        
+
+        circle_marker_ee7997c095b21fad04ebecdc6bd2ba0d.bindPopup(popup_e58ac8a50cb0ad7d9c97d3e2b0959eb5)
+        ;
+
+        
+    
+    
+            var circle_marker_8ca15364bae796322a5f4e267e53c588 = L.circleMarker(
+                [10.4571, -86.2296],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_2cb1f1209f573724585a6744af12a77b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a708450d932b112fb083d7c69eb1f023 = $(`<div id="html_a708450d932b112fb083d7c69eb1f023" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 45 km WNW of Tamarindo, Costa Rica<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_2cb1f1209f573724585a6744af12a77b.setContent(html_a708450d932b112fb083d7c69eb1f023);
+            
+        
+
+        circle_marker_8ca15364bae796322a5f4e267e53c588.bindPopup(popup_2cb1f1209f573724585a6744af12a77b)
+        ;
+
+        
+    
+    
+            var circle_marker_4b1334c9c1acdb481aa913a959320131 = L.circleMarker(
+                [-18.4405, -177.5472],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_59fbae496feb4950f4e3c8084a8e9049 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d4b462970c87297d1275cd03c46a26ed = $(`<div id="html_d4b462970c87297d1275cd03c46a26ed" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> Fiji region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_59fbae496feb4950f4e3c8084a8e9049.setContent(html_d4b462970c87297d1275cd03c46a26ed);
+            
+        
+
+        circle_marker_4b1334c9c1acdb481aa913a959320131.bindPopup(popup_59fbae496feb4950f4e3c8084a8e9049)
+        ;
+
+        
+    
+    
+            var circle_marker_67c43d0437958f0ba6b65a31bb8b14c3 = L.circleMarker(
+                [52.3777, -165.104],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_5a31e520563d329c8899db7291546d79 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3416caaece78d4aa681819439e7e8568 = $(`<div id="html_3416caaece78d4aa681819439e7e8568" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> 192 km SSE of Unalaska, Alaska<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_5a31e520563d329c8899db7291546d79.setContent(html_3416caaece78d4aa681819439e7e8568);
+            
+        
+
+        circle_marker_67c43d0437958f0ba6b65a31bb8b14c3.bindPopup(popup_5a31e520563d329c8899db7291546d79)
+        ;
+
+        
+    
+    
+            var circle_marker_6019939933b5ea9cd77c2b16cb1cb8d8 = L.circleMarker(
+                [-6.2562, 103.6905],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_d1441c75c1eaffb41ec9b9a78e5d65ac = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6535de872e5b457a0c5cb8881520bcec = $(`<div id="html_6535de872e5b457a0c5cb8881520bcec" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.2<br>     <b>Ubicación:</b> 196 km WSW of Bandar Lampung, Indonesia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_d1441c75c1eaffb41ec9b9a78e5d65ac.setContent(html_6535de872e5b457a0c5cb8881520bcec);
+            
+        
+
+        circle_marker_6019939933b5ea9cd77c2b16cb1cb8d8.bindPopup(popup_d1441c75c1eaffb41ec9b9a78e5d65ac)
+        ;
+
+        
+    
+    
+            var circle_marker_ba2c7f8b13088b386427f264ce2276cf = L.circleMarker(
+                [-16.6769, -173.4622],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_38c5f8c56726e6a2302fb854bbdb9062 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5f93bed3a200b0da0e1d333b35017113 = $(`<div id="html_5f93bed3a200b0da0e1d333b35017113" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 87 km SSE of Hihifo, Tonga<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_38c5f8c56726e6a2302fb854bbdb9062.setContent(html_5f93bed3a200b0da0e1d333b35017113);
+            
+        
+
+        circle_marker_ba2c7f8b13088b386427f264ce2276cf.bindPopup(popup_38c5f8c56726e6a2302fb854bbdb9062)
+        ;
+
+        
+    
+    
+            var circle_marker_f42133c5070de19288d13dfb9f19dce0 = L.circleMarker(
+                [-29.6606, -71.2425],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_099e247e20e0042b65a275f552320405 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_34897afb85206cee812df6f359ad92c7 = $(`<div id="html_34897afb85206cee812df6f359ad92c7" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5<br>     <b>Ubicación:</b> 27 km N of La Serena, Chile<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_099e247e20e0042b65a275f552320405.setContent(html_34897afb85206cee812df6f359ad92c7);
+            
+        
+
+        circle_marker_f42133c5070de19288d13dfb9f19dce0.bindPopup(popup_099e247e20e0042b65a275f552320405)
+        ;
+
+        
+    
+    
+            var circle_marker_11a9b009dc605543f3be2e12391884ff = L.circleMarker(
+                [21.227, 121.029],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_07e32fa233b1a08a507ce084ec453002 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ae543606fd7c413a485cfbdcaee561d7 = $(`<div id="html_ae543606fd7c413a485cfbdcaee561d7" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5<br>     <b>Ubicación:</b> 90 km SSE of Hengchun, Taiwan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_07e32fa233b1a08a507ce084ec453002.setContent(html_ae543606fd7c413a485cfbdcaee561d7);
+            
+        
+
+        circle_marker_11a9b009dc605543f3be2e12391884ff.bindPopup(popup_07e32fa233b1a08a507ce084ec453002)
+        ;
+
+        
+    
+    
+            var circle_marker_5c1347c1da72601a38611318650b50ec = L.circleMarker(
+                [41.5266, 79.4209],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_d5ea8498d52e3a8030df3d902d2447b2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_19410b44208b54574d9038fb76978f42 = $(`<div id="html_19410b44208b54574d9038fb76978f42" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 81 km WNW of Aksu, China<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_d5ea8498d52e3a8030df3d902d2447b2.setContent(html_19410b44208b54574d9038fb76978f42);
+            
+        
+
+        circle_marker_5c1347c1da72601a38611318650b50ec.bindPopup(popup_d5ea8498d52e3a8030df3d902d2447b2)
+        ;
+
+        
+    
+    
+            var circle_marker_7a35d9bd28640192e425ac2b6c0372f7 = L.circleMarker(
+                [-17.9649, -178.4687],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_0424aaf8d0ebfe9c82ee024915e6144f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6eade0c9d72ab2d0eef1e237210efbe8 = $(`<div id="html_6eade0c9d72ab2d0eef1e237210efbe8" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.3<br>     <b>Ubicación:</b> 234 km E of Levuka, Fiji<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_0424aaf8d0ebfe9c82ee024915e6144f.setContent(html_6eade0c9d72ab2d0eef1e237210efbe8);
+            
+        
+
+        circle_marker_7a35d9bd28640192e425ac2b6c0372f7.bindPopup(popup_0424aaf8d0ebfe9c82ee024915e6144f)
+        ;
+
+        
+    
+    
+            var circle_marker_0cf0faa74448c5ada5c513fe4e62e2b7 = L.circleMarker(
+                [7.39, 126.2387],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_e1dd2cc0d960580bf43115e380aae36f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4d97d4e7a62aec8286b2e1e83b3c260d = $(`<div id="html_4d97d4e7a62aec8286b2e1e83b3c260d" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> 26 km SSE of Bantacan, Philippines<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_e1dd2cc0d960580bf43115e380aae36f.setContent(html_4d97d4e7a62aec8286b2e1e83b3c260d);
+            
+        
+
+        circle_marker_0cf0faa74448c5ada5c513fe4e62e2b7.bindPopup(popup_e1dd2cc0d960580bf43115e380aae36f)
+        ;
+
+        
+    
+    
+            var circle_marker_eb32719ea64ccd99af36b5520037a601 = L.circleMarker(
+                [33.8434, 86.4422],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_1b79e62c78e7deadd51482784e526c3b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9c0b572ee970514e16ebeb5be32b0386 = $(`<div id="html_9c0b572ee970514e16ebeb5be32b0386" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> western Xizang<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_1b79e62c78e7deadd51482784e526c3b.setContent(html_9c0b572ee970514e16ebeb5be32b0386);
+            
+        
+
+        circle_marker_eb32719ea64ccd99af36b5520037a601.bindPopup(popup_1b79e62c78e7deadd51482784e526c3b)
+        ;
+
+        
+    
+    
+            var circle_marker_97c02e1fd13bcdf10e8f53397c9f60a1 = L.circleMarker(
+                [8.9284, 40.2229],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_eedfdbc33639b82ec97e3662b1c22920 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_52289d5e04d8c79bbc5d53b1b3f20607 = $(`<div id="html_52289d5e04d8c79bbc5d53b1b3f20607" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 8 km SE of Āwash, Ethiopia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_eedfdbc33639b82ec97e3662b1c22920.setContent(html_52289d5e04d8c79bbc5d53b1b3f20607);
+            
+        
+
+        circle_marker_97c02e1fd13bcdf10e8f53397c9f60a1.bindPopup(popup_eedfdbc33639b82ec97e3662b1c22920)
+        ;
+
+        
+    
+    
+            var circle_marker_880ccebd8c8975c4641cc3645cb4ef9f = L.circleMarker(
+                [36.221, 70.5216],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_06260dbe6da494e6b37f861eb1f1f1bb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_26418d33169010279ad1143d7465fe62 = $(`<div id="html_26418d33169010279ad1143d7465fe62" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.8<br>     <b>Ubicación:</b> 71 km ESE of Farkhār, Afghanistan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_06260dbe6da494e6b37f861eb1f1f1bb.setContent(html_26418d33169010279ad1143d7465fe62);
+            
+        
+
+        circle_marker_880ccebd8c8975c4641cc3645cb4ef9f.bindPopup(popup_06260dbe6da494e6b37f861eb1f1f1bb)
+        ;
+
+        
+    
+    
+            var circle_marker_247748ae94536c34cc896df231f5b12a = L.circleMarker(
+                [8.9656, 40.0827],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_86304aa8b2f6ac9fdbfc10618b26d994 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_be828e82027e299939dd7c6772513202 = $(`<div id="html_be828e82027e299939dd7c6772513202" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 9 km WSW of Āwash, Ethiopia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_86304aa8b2f6ac9fdbfc10618b26d994.setContent(html_be828e82027e299939dd7c6772513202);
+            
+        
+
+        circle_marker_247748ae94536c34cc896df231f5b12a.bindPopup(popup_86304aa8b2f6ac9fdbfc10618b26d994)
+        ;
+
+        
+    
+    
+            var circle_marker_c8b3ee793154cc782059ff6ec460566c = L.circleMarker(
+                [-0.5368, 125.8548],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_f9ffea0cb1ddc378595c15515f2d235d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7052140d8f6b2e3a933c99446439ff0c = $(`<div id="html_7052140d8f6b2e3a933c99446439ff0c" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.4<br>     <b>Ubicación:</b> 168 km N of Sanana, Indonesia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_f9ffea0cb1ddc378595c15515f2d235d.setContent(html_7052140d8f6b2e3a933c99446439ff0c);
+            
+        
+
+        circle_marker_c8b3ee793154cc782059ff6ec460566c.bindPopup(popup_f9ffea0cb1ddc378595c15515f2d235d)
+        ;
+
+        
+    
+    
+            var circle_marker_2a67a577a35cf45c4afbe0987596d4ec = L.circleMarker(
+                [35.8463, 140.81],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_82af1b21a7de74d05700ef69ae2f9df9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3b5a78b04f8a75195e2863ebe77d8dde = $(`<div id="html_3b5a78b04f8a75195e2863ebe77d8dde" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 12 km N of Hasaki, Japan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_82af1b21a7de74d05700ef69ae2f9df9.setContent(html_3b5a78b04f8a75195e2863ebe77d8dde);
+            
+        
+
+        circle_marker_2a67a577a35cf45c4afbe0987596d4ec.bindPopup(popup_82af1b21a7de74d05700ef69ae2f9df9)
+        ;
+
+        
+    
+    
+            var circle_marker_afd280f93978ca31e25c9d942442f3d7 = L.circleMarker(
+                [25.4208, 142.5134],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_bec3ec03844808c8c76bdb78f0cc943c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7866faec7acb0fd2a624bf9df5ca19b2 = $(`<div id="html_7866faec7acb0fd2a624bf9df5ca19b2" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_bec3ec03844808c8c76bdb78f0cc943c.setContent(html_7866faec7acb0fd2a624bf9df5ca19b2);
+            
+        
+
+        circle_marker_afd280f93978ca31e25c9d942442f3d7.bindPopup(popup_bec3ec03844808c8c76bdb78f0cc943c)
+        ;
+
+        
+    
+    
+            var circle_marker_61f85d63b96ed20853d75fd11b319172 = L.circleMarker(
+                [-2.7306, 139.4136],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_8aafbf9935df9fa75555eee2ac4d0c7f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c2ff61cf8c0f8749e0136abb6a4027e8 = $(`<div id="html_c2ff61cf8c0f8749e0136abb6a4027e8" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.9<br>     <b>Ubicación:</b> 136 km W of Abepura, Indonesia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_8aafbf9935df9fa75555eee2ac4d0c7f.setContent(html_c2ff61cf8c0f8749e0136abb6a4027e8);
+            
+        
+
+        circle_marker_61f85d63b96ed20853d75fd11b319172.bindPopup(popup_8aafbf9935df9fa75555eee2ac4d0c7f)
+        ;
+
+        
+    
+    
+            var circle_marker_2b7329489cf9b6c0f6137a0d5ff882ba = L.circleMarker(
+                [-9.3918, 108.8482],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_498f06372936600e6be8f1a5438a082f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_37cd444d92b294203351b0d45dd63abd = $(`<div id="html_37cd444d92b294203351b0d45dd63abd" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 185 km S of Cilacap, Indonesia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_498f06372936600e6be8f1a5438a082f.setContent(html_37cd444d92b294203351b0d45dd63abd);
+            
+        
+
+        circle_marker_2b7329489cf9b6c0f6137a0d5ff882ba.bindPopup(popup_498f06372936600e6be8f1a5438a082f)
+        ;
+
+        
+    
+    
+            var circle_marker_104316d708280e9bfe8dc092caa69424 = L.circleMarker(
+                [25.2909, 142.669],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_fb53ecaaa7f6baf2477dba08845a208b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff735b7f6bf05b27d12b7585ac1bf7d8 = $(`<div id="html_ff735b7f6bf05b27d12b7585ac1bf7d8" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> Volcano Islands, Japan region<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_fb53ecaaa7f6baf2477dba08845a208b.setContent(html_ff735b7f6bf05b27d12b7585ac1bf7d8);
+            
+        
+
+        circle_marker_104316d708280e9bfe8dc092caa69424.bindPopup(popup_fb53ecaaa7f6baf2477dba08845a208b)
+        ;
+
+        
+    
+    
+            var circle_marker_81abdb175da71c6bcc75471d2c341dd0 = L.circleMarker(
+                [-23.367, -175.58],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_091e342fbe91bcfb932ebc0f1c8b3103 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_535be7c733f0eb78cd6c32c07a0f35d8 = $(`<div id="html_535be7c733f0eb78cd6c32c07a0f35d8" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.9<br>     <b>Ubicación:</b> 233 km SSW of ‘Ohonua, Tonga<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_091e342fbe91bcfb932ebc0f1c8b3103.setContent(html_535be7c733f0eb78cd6c32c07a0f35d8);
+            
+        
+
+        circle_marker_81abdb175da71c6bcc75471d2c341dd0.bindPopup(popup_091e342fbe91bcfb932ebc0f1c8b3103)
+        ;
+
+        
+    
+    
+            var circle_marker_c901e3ef951adc29827e93d9643a5efe = L.circleMarker(
+                [56.3261, -34.0639],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_9e06d054630940c0476d656395686fb5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a3a650e693740b28d43e38adefb7e29d = $(`<div id="html_a3a650e693740b28d43e38adefb7e29d" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 5.4<br>     <b>Ubicación:</b> Reykjanes Ridge<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_9e06d054630940c0476d656395686fb5.setContent(html_a3a650e693740b28d43e38adefb7e29d);
+            
+        
+
+        circle_marker_c901e3ef951adc29827e93d9643a5efe.bindPopup(popup_9e06d054630940c0476d656395686fb5)
+        ;
+
+        
+    
+    
+            var circle_marker_98e02709d550d94d9e1c1a7bd457ed55 = L.circleMarker(
+                [-21.1522, -67.9054],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_add48ad8ca21e4c1173cdafb19ee809c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e16e3175dc89a30158485ee4bf3785de = $(`<div id="html_e16e3175dc89a30158485ee4bf3785de" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.9<br>     <b>Ubicación:</b> 37 km ENE of Ollagüe, Chile<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_add48ad8ca21e4c1173cdafb19ee809c.setContent(html_e16e3175dc89a30158485ee4bf3785de);
+            
+        
+
+        circle_marker_98e02709d550d94d9e1c1a7bd457ed55.bindPopup(popup_add48ad8ca21e4c1173cdafb19ee809c)
+        ;
+
+        
+    
+    
+            var circle_marker_3825277b865839ad5b924a2b4f6b66ac = L.circleMarker(
+                [-18.946, 169.1294],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_c2ea6e99bd21e6e282dde447da15ee9f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_694a0b7adc4ecc068dbb90374d5314bd = $(`<div id="html_694a0b7adc4ecc068dbb90374d5314bd" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 67 km NNW of Isangel, Vanuatu<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_c2ea6e99bd21e6e282dde447da15ee9f.setContent(html_694a0b7adc4ecc068dbb90374d5314bd);
+            
+        
+
+        circle_marker_3825277b865839ad5b924a2b4f6b66ac.bindPopup(popup_c2ea6e99bd21e6e282dde447da15ee9f)
+        ;
+
+        
+    
+    
+            var circle_marker_b2fef68cac45e667b0409e9a7b49c574 = L.circleMarker(
+                [29.2769, 130.3249],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_6d6a11f8eb2c34a18689f43c78043699 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc6a5671e6ee3f24e1249a9dcba7816b = $(`<div id="html_bc6a5671e6ee3f24e1249a9dcba7816b" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.7<br>     <b>Ubicación:</b> 107 km S of Yudomari, Japan<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_6d6a11f8eb2c34a18689f43c78043699.setContent(html_bc6a5671e6ee3f24e1249a9dcba7816b);
+            
+        
+
+        circle_marker_b2fef68cac45e667b0409e9a7b49c574.bindPopup(popup_6d6a11f8eb2c34a18689f43c78043699)
+        ;
+
+        
+    
+    
+            var circle_marker_9b19c373e69bed9d11eb98494b5c9658 = L.circleMarker(
+                [4.3721, 98.1944],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_a3996fdde9333c9543ea4e0d8af4e49b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_86d2319df51a5da40b3ee93317d70664 = $(`<div id="html_86d2319df51a5da40b3ee93317d70664" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.5<br>     <b>Ubicación:</b> 27 km ESE of Langsa, Indonesia<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_a3996fdde9333c9543ea4e0d8af4e49b.setContent(html_86d2319df51a5da40b3ee93317d70664);
+            
+        
+
+        circle_marker_9b19c373e69bed9d11eb98494b5c9658.bindPopup(popup_a3996fdde9333c9543ea4e0d8af4e49b)
+        ;
+
+        
+    
+    
+            var circle_marker_9482419431e9e9e90a5db9bfee9147c4 = L.circleMarker(
+                [17.2562, -101.0161],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f19e40373fb9c15461a4e1fe13e8e323);
+        
+    
+        var popup_14bb56c372d7a1c2bddce62835ce40ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7e07bbbc2084dbdc2d8dee7ac881baa = $(`<div id="html_c7e07bbbc2084dbdc2d8dee7ac881baa" style="width: 100.0%; height: 100.0%;">     <b>Magnitud:</b> 4.6<br>     <b>Ubicación:</b> 8 km SSE of Papanoa, Mexico<br>     <img src="https://static.vecteezy.com/system/resources/previews/006/059/807/non_2x/warning-yellow-sign-on-white-background-earthquake-symbol-square-hazard-warning-sign-with-rounded-corners-vector.jpg" alt="Terremoto" width="200">     </div>`)[0];
+                popup_14bb56c372d7a1c2bddce62835ce40ad.setContent(html_c7e07bbbc2084dbdc2d8dee7ac881baa);
+            
+        
+
+        circle_marker_9482419431e9e9e90a5db9bfee9147c4.bindPopup(popup_14bb56c372d7a1c2bddce62835ce40ad)
+        ;
+
+        
+    
+    
+            marker_cluster_f19e40373fb9c15461a4e1fe13e8e323.addTo(map_5ffd7f28d1a041b3f885f0d62df0c276);
+        
+    
+            tile_layer_f9caa51c392bd0b7bc15df90ddf5d94b.addTo(map_5ffd7f28d1a041b3f885f0d62df0c276);
+        
+    
+            marker_cluster_f19e40373fb9c15461a4e1fe13e8e323.addTo(map_5ffd7f28d1a041b3f885f0d62df0c276);
+        
+</script>
+</html>
